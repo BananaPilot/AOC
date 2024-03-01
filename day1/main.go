@@ -13,19 +13,8 @@ func main() {
 	fmt.Println(len(arr))
 	var total = 0
 	for _, element := range arr {
-		var str string
-		for i := 0; i < len(element); i++ {
-			if unicode.IsDigit(rune(element[i])) {
-				str = str + string(element[i])
-				break
-			}
-		}
-		for i := len(element) - 1; i >= 0; i-- {
-			if unicode.IsDigit(rune(element[i])) {
-				str = str + string(element[i])
-				break
-			}
-		}
+		str := SearchFirstDigit(element)
+		str += rSearchFirstDigit(element)
 		val, err := strconv.Atoi(str)
 		if err != nil {
 			panic(err.Error())
@@ -41,4 +30,23 @@ func getElementsFromFile(path string) []string {
 		panic(err.Error())
 	}
 	return strings.Split(string(res), "\n")
+}
+
+func rSearchFirstDigit(str string) string {
+	for i := len(str) - 1; i >= 0; i-- {
+		if unicode.IsDigit(rune(str[i])) {
+			return string(str[i])
+		}
+	}
+	return ""
+}
+
+func SearchFirstDigit(str string) string {
+	for i := 0; i < len(str); i++ {
+		if unicode.IsDigit(rune(str[i])) {
+			str = str + string(str[i])
+			break
+		}
+	}
+	return ""
 }

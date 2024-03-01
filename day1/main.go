@@ -4,11 +4,12 @@ import (
 	"fmt"
 	"os"
 	"strconv"
+	"strings"
 	"unicode"
 )
 
 func main() {
-	arr := stringArray(getElementsFromFile("day1/text.txt"))
+	arr := getElementsFromFile("day1/text.txt")
 	fmt.Println(len(arr))
 	var total = 0
 	for _, element := range arr {
@@ -34,24 +35,10 @@ func main() {
 	println(total)
 }
 
-func getElementsFromFile(path string) []byte {
+func getElementsFromFile(path string) []string {
 	res, err := os.ReadFile(path)
 	if err != nil {
 		panic(err.Error())
 	}
-	return res
-}
-
-func stringArray(bArray []byte) []string {
-	var strings []string
-	var res string
-	for _, element := range bArray {
-		if string(element) != "\n" {
-			res += string(element)
-		} else {
-			strings = append(strings, res)
-			res = ""
-		}
-	}
-	return strings
+	return strings.Split(string(res), "\n")
 }

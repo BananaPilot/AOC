@@ -1,8 +1,9 @@
 <Solution>
   <Folder Name="/Solution Items/">
-    <File Path="git.ignore" />
+    <File Path=".gitignore" />
   </Folder>
   <Project Path="Day1/Day1.csproj" />
   <Project Path="Day2/Day2.csproj" Id="9fba2700-cf1a-4407-a386-681a8ef12723" />
+  <Project Path="Day3/Day3.csproj" Id="c048e1ca-3616-49ba-a51c-44872a07f59d" />
   <Project Path="Utils/Utils.csproj" />
 </Solution>

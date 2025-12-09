@@ -7,12 +7,12 @@
       "RelativeMoniker": "D:0:0:{9FBA2700-CF1A-4407-A386-681A8EF12723}|Day2\\Day2.csproj|solutionrelative:day2\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9FBA2700-CF1A-4407-A386-681A8EF12723}|Day2\\Day2.csproj|c:\\work\\mystuff\\aoc\\day2\\logic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9FBA2700-CF1A-4407-A386-681A8EF12723}|Day2\\Day2.csproj|solutionrelative:day2\\logic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{9FBA2700-CF1A-4407-A386-681A8EF12723}|Day2\\Day2.csproj|c:\\work\\mystuff\\aoc\\day2\\input.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
       "RelativeMoniker": "D:0:0:{9FBA2700-CF1A-4407-A386-681A8EF12723}|Day2\\Day2.csproj|solutionrelative:day2\\input.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9FBA2700-CF1A-4407-A386-681A8EF12723}|Day2\\Day2.csproj|c:\\work\\mystuff\\aoc\\day2\\logic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9FBA2700-CF1A-4407-A386-681A8EF12723}|Day2\\Day2.csproj|solutionrelative:day2\\logic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -46,7 +46,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "input.txt",
               "DocumentMoniker": "C:\\work\\mystuff\\AOC\\Day2\\input.txt",
               "RelativeDocumentMoniker": "Day2\\input.txt",
@@ -59,13 +59,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Logic.cs",
               "DocumentMoniker": "C:\\work\\mystuff\\AOC\\Day2\\Logic.cs",
               "RelativeDocumentMoniker": "Day2\\Logic.cs",
               "ToolTip": "C:\\work\\mystuff\\AOC\\Day2\\Logic.cs",
               "RelativeToolTip": "Day2\\Logic.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAA9AAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACoAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-09T09:01:16.576Z",
               "EditorCaption": ""
@@ -78,7 +78,7 @@
               "RelativeDocumentMoniker": "Day2\\Program.cs",
               "ToolTip": "C:\\work\\mystuff\\AOC\\Day2\\Program.cs",
               "RelativeToolTip": "Day2\\Program.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAkwCQAAAA0AAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABAAAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-09T08:27:55.168Z",
               "EditorCaption": ""

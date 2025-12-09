@@ -6,17 +6,40 @@ namespace Day2
 {
     public class Logic
     {
-        public List<Int64> ListOfIds { get; set; } = new List<Int64>();
-        public (Int64, Int64) GetStartAndLimitId(string id)
+        public HashSet<long> SetOfIds { get; set; } = new HashSet<long>();
+        public (long, long) GetStartAndLimitId(string id)
         {
             var split = id.Split('-');
-            return (Int64.Parse(split[0]), Int64.Parse(split[^1]));
+            return (long.Parse(split[0]), long.Parse(split[^1]));
         }
 
-        public (string, string) GetStringHalfedString(string id)
+        public IEnumerable<string> GetSubstring(string id, int chunkSize)
         {
+            return Enumerable.Range(0, id.Length / chunkSize)
+            .Select(i => id.Substring(i * chunkSize, chunkSize));
+        }
 
-            return (id.Substring(0, id.Length / 2), id.Substring(id.Length / 2));
+        public void FindInvalidIds(List<string> lines)
+        {
+            foreach (string line in lines)
+            {
+                var (start, limit) = GetStartAndLimitId(line);
+
+                for (long i = start; i <= limit; i++)
+                {
+                    var stringOfI = i.ToString();
+                    for (var j = stringOfI.Length / 2; j > 0; j--)
+                    {
+                        var stringChunk = GetSubstring(stringOfI, j).First();
+                        var sb = new StringBuilder(stringChunk);
+                        for (var k = 0; k < stringOfI.Length / j - 1; k++)
+                        {
+                            sb.Append(stringChunk);
+                        }
+                        if (sb.ToString() == stringOfI) SetOfIds.Add(i);
+                    }
+                }
+            }
         }
     }
 }
